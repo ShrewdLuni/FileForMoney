@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { MainComponent } from './main/main.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CreateComponent } from './features/create/create.component';
+import { ErrorComponent } from './features/error/error.component';
 
 export const routes: Routes = [
-    { path: 'first-component', component: MainComponent },
-    { path: '**', component: PageNotFoundComponent },
+    { path: '', component: CreateComponent },
+    { path: '**', component: ErrorComponent },//fix: router
 ];
