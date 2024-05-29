@@ -4,10 +4,10 @@ import { ConfirmComponent } from "../../shared/components/confirm/confirm.compon
 import { PriceInputComponent } from "../../shared/components/priceInput/priceInput.component";
 
 @Component({
-    selector: 'app-create',
-    standalone: true,
-    templateUrl: './create.component.html',
-    imports: [UploadComponent, ConfirmComponent, PriceInputComponent]
+  selector: 'app-create',
+  standalone: true,
+  templateUrl: './create.component.html',
+  imports: [UploadComponent, ConfirmComponent, PriceInputComponent]
 })
 export class CreateComponent {
   title = 'FileForMoney';
