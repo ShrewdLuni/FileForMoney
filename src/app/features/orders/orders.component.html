@@ -1,4 +1,7 @@
-<div class="flex flex-col h-screen w-screen justify-center items-center bg-black">
-    <p class="font-bold text-white text-4xl">Orders</p>
-    <app-navbar/>
+<div class="flex flex-col gap-y-2 justify-center items-center bg-black w-screen min-h-screen">
+  <p class="font-bold text-white text-4xl">Orders</p>
+  @for (item of orders; track $index) {
+    <app-order [preview]="item.preview" [label]="item.label" [description]="item.description" [price]="item.price" />
+  }
+  <app-navbar class="mt-20"/>
 </div>
