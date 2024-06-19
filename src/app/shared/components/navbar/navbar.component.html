@@ -2,7 +2,7 @@
   <div class="hidden lg:flex mb-10">
     <p class="text-xl">FileForMoney</p>
   </div>
-  <div class="flex lg:flex-col lg:gap-y-4 justify-between  w-full">
+  <div class="flex lg:flex-col lg:gap-y-4 justify-between w-full">
     @for (item of navbarItems; track $index) {
       <navbar-item [label]="item.label" [icon]="item.icon" [href]="item.href"/>
     }

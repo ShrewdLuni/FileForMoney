@@ -1,3 +1,10 @@
-<div class="flex flex-col h-screen w-screen justify-center items-center bg-black">
-    <p class="font-bold text-white text-4xl">Payment Page</p>
-</div>  
+<div class="flex flex-col w-screen h-screen justify-center items-center bg-[#cbc9ff] px-4 overflow-x-hidden">
+  <div class="flex flex-col justify-center w-[90vw] items-center lg:w-[35%] bg-[#dedefd] rounded-2xl shadow-2xl py-4 px-6">
+    <p class="text-[#6d40ff] text-xl lg:text-3xl lg:hover:text-4xl lg:hover:font-bold font-semibold transition-all duration-500">{{name}}</p>
+    <img class="rounded-xl w-[90vw] lg:w-[30vw] my-3" src={{previewSrc}} alt="">
+    <p class="text-[#6d40ff] font-medium text-base lg:text-base lg:hover:text-xl mb-10 transition-all duration-700">{{description}}</p>
+    <a href="payment">
+      <button type="button" class="bg-[#6d40ff] rounded-2xl w-[85vw] h-[48px] lg:w-[250px] items-center justify-center whitespace-nowrap text-white text-center text-md hover:text-lg font-bold bottom transition-all duration-500">{{price}}$</button>
+    </a>
+  </div>
+</div>    

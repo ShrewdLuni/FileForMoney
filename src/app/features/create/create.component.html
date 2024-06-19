@@ -1,5 +1,13 @@
-<div class="flex flex-col h-screen justify-center items-center bg-[#fffdf3] gap-y-4">
-    <app-upload></app-upload>
-    <app-priceInput></app-priceInput>
-    <app-confirm></app-confirm>
-</div>  
+<div class="flex flex-col h-screen w-screen justify-center items-center">
+  <div class="flex flex-col justify-center items-center gap-y-4">
+    <div>Upload</div>
+    <form class="flex flex-col justify-center items-center gap-y-4" [formGroup]="createForm">
+      <input class="text-left" type="text" formControlName="name" placeholder="Name">
+      <input class="text-left" type="text" formControlName="description" placeholder="Description"> 
+      <input class="text-center" type="number" formControlName="price" placeholder="Price"> 
+      <input class="text-center" type="number" min="0" step="0.01" formControlName="downloadLimit" placeholder="downloadLimit"> 
+    </form>
+    <button type="button" class="bg-[#8811ff] rounded-2xl w-[250px] h-[32px] items-center justify-center whitespace-nowrap text-white text-center text-md font-bold">Continue</button>
+  </div>  
+  <app-navbar/>
+</div>
