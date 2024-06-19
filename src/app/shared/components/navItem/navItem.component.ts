@@ -10,4 +10,5 @@ import {MatIconModule} from '@angular/material/icon';
 export class NavItemComponent {
   @Input() label = "home"
   @Input() icon = "home"
+  @Input() href = "/"
 }

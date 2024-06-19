@@ -9,9 +9,9 @@ import { NavItemComponent } from '../navItem/navItem.component';
 })
 export class NavbarComponent {
     @Input() navbarItems = [
-    {label : "Home",icon : "home"},
-    {label : "Stats",icon : "monitoring"},
-    {label : "Create",icon : "add_circle"},
-    {label : "History",icon : "receipt_long"},
-    {label : "Account",icon : "account_circle"}]
+    {label : "Home",icon : "home_outline", href : "/"},
+    {label : "Stats",icon : "query_stats", href : "dashboard"},
+    {label : "Create",icon : "add_circle", href : "create"},
+    {label : "Orders",icon : "receipt_long", href : "orders"},
+    {label : "Account",icon : "account_circle", href : "profile"}]
 }
