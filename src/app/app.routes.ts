@@ -7,15 +7,16 @@ import { ProfileComponent } from './features/profile/profile.component';
 import { PaymentComponent } from './features/payment/payment.component';
 import { ErrorComponent } from './features/error/error.component';
 import { HomeComponent } from './features/home/home.component';
+import { NavbarLayoutComponent } from './shared/components/navbarLayout/navbarLayout.component';
 
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'dashboard', component: DashboardComponent },
-    { path: 'create', component: CreateComponent },
-    { path: 'orders', component: OrdersComponent },
-    { path: 'profile', component: ProfileComponent },
-    
+    { path: '', component: NavbarLayoutComponent,children: [{ path: '', component: HomeComponent },]},
+    { path: 'dashboard', component: NavbarLayoutComponent,children: [{ path: '', component: DashboardComponent },]},
+    { path: 'create', component: NavbarLayoutComponent,children: [{ path: '', component: CreateComponent },]},
+    { path: 'orders', component: NavbarLayoutComponent,children: [{ path: '', component: OrdersComponent },]},
+    { path: 'profile', component: NavbarLayoutComponent,children: [{ path: '', component: ProfileComponent },]},
+
     { path: 'payment', component: PaymentComponent },
     { path: '**', component: ErrorComponent },//fix: router
 ];

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { UploadComponent } from '../../shared/components/upload/upload.component';
-import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 import { FormControl, FormGroup } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 
@@ -8,7 +7,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     selector: 'app-create',
     standalone: true,
     templateUrl: './create.component.html',
-    imports: [UploadComponent, NavbarComponent,ReactiveFormsModule]
+    imports: [UploadComponent,ReactiveFormsModule]
 })
 export class CreateComponent {
   createForm = new FormGroup({
